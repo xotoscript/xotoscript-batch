@@ -1,0 +1,24 @@
+{
+	"name": "@xotosphere/xotosphere-scripts-batch",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "MIT",
+	"dependencies": {
+		"@apollo/client": "^3.6.9",
+		"apollo": "^2.34.0",
+		"axios": "^0.27.2",
+		"cross-fetch": "^3.1.5",
+		"faker": "5.5.3",
+		"graphql": "^16.5.0",
+		"inquirer": "^8.2.0"
+	},
+	"scripts": {
+		"compile": "tsc",
+		"watch": "tsc -w --project tsconfig.json",
+		"start": "node ./dist/index.js",
+		"generate:graphql-types": "apollo client:codegen --target=typescript --tsFileExtension=d.ts --no-addTypename --globalTypesFile=./src/__graphql__/GlobalGraphTypes.d.ts __graphql__"
+	},
+	"devDependencies": {
+		"@types/faker": "^6.6.9"
+	}
+}
