@@ -1,5 +1,5 @@
 {
-	"name": "@xotosphere/xotosphere-scripts-batch",
+	"name": "xotoscript-batch",
 	"version": "1.0.0",
 	"main": "index.js",
 	"license": "MIT",
